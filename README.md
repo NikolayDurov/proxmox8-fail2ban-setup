@@ -49,7 +49,7 @@ bantime   = 2h
 
 ## 6. Add proxmox web-ui protection
 ```
-nano /etc/fail2ban/jail.d/sshd.local
+nano /etc/fail2ban/filter.d/proxmox.conf
 ```
 add to file:
 ```
@@ -81,7 +81,6 @@ enabled = true
 enabled = true
 port = 8006
 filter = proxmox
-# banaction = iptables
 backend   = systemd
 maxretry  = 5
 findtime  = 2h
