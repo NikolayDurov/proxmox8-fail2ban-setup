@@ -16,7 +16,7 @@ nano /etc/apt/sources.list
 add to file:
 ```
 deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
-deb http://security.debian.org/debian-security bookworm-security main contrib
+deb http://security.debian.org/debian-security bookworm-security main contrib  non-free non-free-firmware
 ```
 
 ## 3. Update
